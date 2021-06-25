@@ -18,7 +18,7 @@ for (i = 0; i < 10; i++)
 putchar(m);
 m++;
 }
-m='a';
+m = 'a';
 for (i = 0; i < 6; i++)
 {
 putchar(m);
