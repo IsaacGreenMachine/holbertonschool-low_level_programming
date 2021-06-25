@@ -10,20 +10,13 @@
  */
 int main(void)
 {
-char m = '0';
-char n = '\n';
 int i;
 for (i = 0; i < 10; i++)
 {
-putchar(m);
 m++;
 }
-m = 'a';
 for (i = 0; i < 6; i++)
 {
-putchar(m);
-m++;
 }
-putchar(n);
 return (0);
 }
