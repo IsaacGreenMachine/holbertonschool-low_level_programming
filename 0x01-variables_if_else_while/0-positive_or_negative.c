@@ -6,7 +6,9 @@
 /**
  * main - generates random number and says whether it is even, odd, or zero.
  *
- * betty style doc for function main goes there */
+ * betty style doc for function main goes there
+ * Return: will always return 0 
+ */
 int main(void)
 {
 	int n;
