@@ -3,7 +3,10 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - generates random number and says whether it is even, odd, or zero.
+ *
+ * betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -18,7 +21,7 @@ int main(void)
 	{
 		if (n == 0)
 		{
-		printf("%i is 0\n", n);
+		printf("%i is zero\n", n);
 		}
 		else
 		{
