@@ -14,7 +14,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int q = abs(n % 10);
+	int q;
+
+	q = abs(n % 10);
 
 	if (q == 0)
 	{
