@@ -12,7 +12,8 @@ int main(void)
 {
 	char m = 'a';
 	char n = '\n';
-for (int i = 0; i < 26; i++)
+	int i;
+for (i = 0; i < 26; i++)
 {
 	putchar(m);
 	m++;
