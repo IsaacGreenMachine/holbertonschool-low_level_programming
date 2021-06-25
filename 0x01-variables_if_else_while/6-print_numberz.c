@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - generates a random number and makes a statement about the last digit
+ * Return: will always be 0
+ * betty style doc for function main goes there
+ */
+int main(void)
+{
+int m = 48;
+int n = 10;
+int i;
+
+for (i = 0; i < 10; i++)
+{
+putchar(m);
+m++;
+}
+putchar(n);
+return (0);
+}
