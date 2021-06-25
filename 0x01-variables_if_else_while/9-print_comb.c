@@ -11,11 +11,20 @@
 int main(void)
 {
 int i;
+int x = 48; /*zero*/
+int y = 10; /*newline*/
+int z = 32; /*space*/
+int c = 44; /*comma*/
 for (i = 0; i < 10; i++)
 {
-}
-for (i = 0; i < 6; i++)
+putchar(x);
+if (x != 57)
 {
+putchar(c);
+putchar(z);
 }
+x++;
+}
+putchar(y);
 return (0);
 }
