@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- *islower- prints alphabet in lowercase using _putchar ten times
+ *_islower- prints alphabet in lowercase using _putchar ten times
  *@c: First operand
  *
  * Return: will always be void
 */
-int islower(int c)
+int _islower(int c)
 {
 if (c > 96 && c < 123)
 {
