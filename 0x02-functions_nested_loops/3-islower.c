@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *_islower- prints alphabet in lowercase using _putchar ten times
+ *_islower- checks if passed number is lowercase in ASCII 
  *@c: First operand
  *
- * Return: will always be void
+ * Return: 1 if lowercase, 0 if not.
 */
 int _islower(int c)
 {

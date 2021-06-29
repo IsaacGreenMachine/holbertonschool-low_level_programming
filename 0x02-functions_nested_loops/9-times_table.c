@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- *times_table- prints absolute value
- * Return: will always be abs(n)
+ *times_table- prints 9x9 times table
+ * Return: will always be void
 */
 
 void times_table(void)

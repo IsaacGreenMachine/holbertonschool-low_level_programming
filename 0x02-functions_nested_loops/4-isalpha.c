@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *_isalpha- prints alphabet in lowercase using _putchar ten times
+ *_isalpha- checks if passed in is alphabetical as ASCII
  *@c: First operand
  *
- * Return: will always be void
+ * Return: 1 if alphabetical, 0 if not
 */
 int _isalpha(int c)
 {

@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *print_last_digit- prints absolute value
+ *print_last_digit- prints last digit of a number 
  *@n: First operand
  *
- * Return: will always be abs(n)
+ * Return: last digit of number
 */
 
 int print_last_digit(int n)

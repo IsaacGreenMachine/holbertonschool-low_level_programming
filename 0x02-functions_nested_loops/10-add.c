@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- *add- prints sum of two inputs
+ *add- return sum of two inputs
  *@n: First operand
  *@m: Second operand
  *
- * Return: will always be abs(n)
+ * Return: sum
 */
 
 int add(int n, int m)

@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
- * main - generates a random number and makes a statement about the last digit
+ * main - Prints Holberton
  * Return: will always be 0
  * betty style doc for function main goes there
  */

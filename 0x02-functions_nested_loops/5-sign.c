@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- *print_sign- prints alphabet in lowercase using _putchar ten times
+ *print_sign- prints sign of passed int
  *@n: First operand
  *
- * Return: will always be void
+ * Return: 0 if 0, 1 if positive, -1 if negative
 */
 int print_sign(int n)
 {

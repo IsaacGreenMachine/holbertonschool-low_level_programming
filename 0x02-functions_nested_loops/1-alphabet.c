@@ -5,15 +5,6 @@
  * print_alphabet - prints alphabet in lowercase using _putchar
  * Return: will always be void
  * betty style doc for function main goes there
- *
- *
- *
- *
- *
- *
- *
- *
- *
 */
 void print_alphabet(void)
 {
