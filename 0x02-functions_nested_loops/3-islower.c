@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *_islower- checks if passed number is lowercase in ASCII 
+ *_islower- checks if passed number is lowercase in ASCII
  *@c: First operand
  *
  * Return: 1 if lowercase, 0 if not.
