@@ -23,7 +23,7 @@ for (j = 0; j < 10; j++)
 		{
 		_putchar(' ');
 		}
-		if (q < 10)
+		if (q < 10 && i > 0)
 		{
 		_putchar(' ');
 		}
