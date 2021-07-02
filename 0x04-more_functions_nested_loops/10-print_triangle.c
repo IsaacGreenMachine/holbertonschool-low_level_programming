@@ -22,7 +22,7 @@ for (j = 0; j < size - d; j++)
 }
 _putchar('\n');
 }
-if (size == 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
