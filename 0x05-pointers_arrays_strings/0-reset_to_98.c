@@ -1,5 +1,3 @@
-#include "holberton.h"
-
 /**
  * reset_to_98 - sets the passed pointer's value to 98.
  * @n: pointer whose pointed to item's value is set to 98.
