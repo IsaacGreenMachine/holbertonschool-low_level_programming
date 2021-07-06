@@ -13,8 +13,10 @@ while (*s != 0)
 {
 s++;
 }
+s--;
 for (s = s; s >= start; s--)
 {
 _putchar(*s);
 }
+_putchar('\n');
 }
