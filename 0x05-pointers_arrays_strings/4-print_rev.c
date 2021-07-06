@@ -17,5 +17,4 @@ for (s = s; s >= start; s--)
 {
 _putchar(*s);
 }
-_putchar('\n');
 }
