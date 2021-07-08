@@ -3,7 +3,7 @@
  * @dest: final destination of catted strings
  * @src: string to be catted to dest
  *
- * Return: Always 0.
+ * Return: pointer to start of catted strings
  */
 char *_strcat(char *dest, char *src)
 {
