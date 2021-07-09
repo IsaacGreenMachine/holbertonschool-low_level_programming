@@ -18,9 +18,15 @@ i++;
 j++;
 count++;
 }
+
 if (*j == 0)
 {
+while(count < n)
+{	
 *i = 0;
+i++;
+count++;
+}
 }
 return (dest);
 }
