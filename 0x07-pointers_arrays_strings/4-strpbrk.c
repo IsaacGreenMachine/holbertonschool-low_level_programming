@@ -18,5 +18,9 @@ return (s);
 }
 }
 }
+if (*s == *a)
+{
+return (s);
+}
 return ('\0');
 }
