@@ -12,7 +12,7 @@ _putchar(*s);
 if (*s != 0)
 {
 s++;
-_puts_recursion(s);
+_puts_recursion(s--);
 }
 else
 {
