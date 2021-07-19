@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - prints program name and new line.
  * @argc: number of modifiers
@@ -8,5 +8,10 @@
  */
 void main(int argc, char *argv[])
 {
-printf("%s\n", *argv);
+int i;
+for (i = 0; *(argv[0] + i) != 0; i++)
+{
+_putchar(*(argv[0] + i));
+}
+_putchar('\n');
 }
