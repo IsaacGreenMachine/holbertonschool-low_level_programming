@@ -1,4 +1,4 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
-void main(int argc, char *argv[]);
+int _putchar(char c);
 #endif
