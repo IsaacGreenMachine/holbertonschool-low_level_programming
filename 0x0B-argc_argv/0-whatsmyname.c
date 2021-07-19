@@ -8,6 +8,7 @@
  */
 int main(int argc, char **argv)
 {
+argc = 0;
 int i;
 for (i = 0; *(argv[0] + i) != 0; i++)
 {
