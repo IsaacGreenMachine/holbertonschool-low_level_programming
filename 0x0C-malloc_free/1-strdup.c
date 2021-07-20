@@ -15,7 +15,14 @@ return (NULL);
 else
 {
 void *p = malloc(strlen(str) + 1);
+if (p == NULL)
+{
+return (NULL);
+}
+else
+{
 strcpy(p, str);
 return (p);
+}
 }
 }
