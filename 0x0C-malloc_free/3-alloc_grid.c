@@ -12,13 +12,15 @@ int i, j;
 int **p = (int **)malloc(sizeof(int *) * width);
 if (p == NULL)
 {
+free(p);
 return (NULL);
 }
 for (i = 0; i < width; i++)
 {
-p[i] = (int *)malloc(sizeof(int) * height);
+p[i] = (int *)malloc(sizeof(int) * height - 1);
 if (p[i] == NULL)
 {
+free(p[i]);
 return (NULL);
 }
 for (j = 0; j < height; j++)
