@@ -8,11 +8,11 @@ return (NULL);
 }
 else
 {
-char* p = (char*)calloc(size, sizeof(char));
+char *p = (char *)calloc(size, sizeof(char));
 for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
-return(p);
+return (p);
 }
 }
