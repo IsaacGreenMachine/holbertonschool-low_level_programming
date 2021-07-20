@@ -3,7 +3,6 @@
  * alloc_grid - allocates space for a 2d array
  * @width: width of array
  * @height: height of array
- *
  * Return: pointer to array or NULL if failed
  */
 int **alloc_grid(int width, int height)
@@ -12,7 +11,7 @@ int **p;
 int i, j;
 if (width == 0 || height == 0)
 {
-return NULL;
+return (NULL);
 }
 p = (int **)malloc(sizeof(int *) * width);
 if (p == NULL)
