@@ -14,7 +14,7 @@ return (NULL);
 }
 else
 {
-void *p = malloc(strlen(str));
+void *p = malloc(strlen(str) + 1);
 strcpy(p, str);
 return (p);
 }
