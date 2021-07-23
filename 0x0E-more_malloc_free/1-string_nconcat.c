@@ -21,7 +21,7 @@ s2 = "";
 }
 if (n >= strlen(s2))
 {
-s = malloc(sizeof(*s) * (strlen(s1) + strlen(s2)));
+s = malloc(sizeof(*s) * (strlen(s1) + strlen(s2)) + 1);
 if (s == NULL)
 {
 return (NULL);
@@ -31,7 +31,7 @@ s = strcpy((s + strlen(s1)), s2);
 }
 else
 {
-s = malloc(sizeof(*s) * (strlen(s1) + n));
+s = malloc(sizeof(*s) * (strlen(s1) + n) + 1);
 if (s == NULL)
 {
 return (NULL);
