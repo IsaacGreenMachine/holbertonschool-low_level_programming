@@ -19,6 +19,7 @@ if (s == NULL)
 {
 return (NULL);
 }
+i--;
 for (; i >= 0; i--)
 {
 *(s + i) = 0;
