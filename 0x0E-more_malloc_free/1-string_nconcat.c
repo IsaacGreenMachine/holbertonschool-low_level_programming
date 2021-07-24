@@ -27,7 +27,7 @@ if (s == NULL)
 return (NULL);
 }
 s = strcpy(s, s1);
-s = strcpy((s + strlen(s1)), s2);
+strcpy((s + strlen(s1)), s2);
 }
 else
 {
@@ -37,7 +37,7 @@ if (s == NULL)
 return (NULL);
 }
 s = strcpy(s, s1);
-s = strncat(s, s2, n);
+strncat(s, s2, n);
 }
 return (s);
 }
