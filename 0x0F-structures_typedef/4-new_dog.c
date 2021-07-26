@@ -11,21 +11,9 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-if (d != NULL)
-{
-if (name != NULL)
-{
 d->name = name;
-}
-if (age >= 0)
-{
 d->age = age;
-}
-if (owner != NULL)
-{
 d->owner = owner;
-}
-}
 }
 
 /**
@@ -40,6 +28,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t my_dog;
 dog_t *ptr = &my_dog;
+if (ptr == NULL || name == NULL || age < 0 || owner == NULL)
+{
+return (NULL);
+}
 init_dog(ptr, name, age, owner);
 if (ptr == NULL || ptr->name == NULL || ptr->age < 0 || ptr->owner == NULL)
 {
