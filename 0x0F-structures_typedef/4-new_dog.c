@@ -16,14 +16,12 @@ dog_t *dawg;
 dawg = malloc(sizeof(dog_t));
 if (dawg == NULL)
 {
-free(dawg);
 return (NULL);
 }
 dawg->name = strdup(name);
 if (dawg->name == NULL)
 {
 free(dawg);
-free(dawg->name);
 return (NULL);
 }
 dawg->owner = strdup(owner);
@@ -31,7 +29,6 @@ if (dawg->owner == NULL)
 {
 free(dawg);
 free(dawg->name);
-free(dawg->owner);
 return (NULL);
 }
 dawg->age = age;
