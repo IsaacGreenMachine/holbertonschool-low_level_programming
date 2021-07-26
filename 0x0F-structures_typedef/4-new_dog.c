@@ -41,7 +41,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t my_dog;
 dog_t *ptr = &my_dog;
 init_dog(ptr, name, age, owner);
-if(ptr == NULL || ptr->name == NULL|| ptr->age < 0 || ptr->owner == NULL)
+if (ptr == NULL || ptr->name == NULL || ptr->age < 0 || ptr->owner == NULL)
 {
 return (NULL);
 }
