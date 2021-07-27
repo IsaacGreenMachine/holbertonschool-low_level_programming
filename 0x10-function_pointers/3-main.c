@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - puts together all calculation functions
@@ -16,7 +17,7 @@ int main(int argc, char **argv)
 int (*p)(int, int);
 
 /*making sure args right length*/
-if (argc == 4)
+if (argc == 4 && strlen(argv[2]) == 1)
 {
 
 /*setting pointer equal to right function*/
