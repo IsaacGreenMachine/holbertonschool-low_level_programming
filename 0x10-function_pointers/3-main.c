@@ -19,7 +19,7 @@ int (*p)(int, int);
 /*making sure args right length*/
 if (argc == 4 && strlen(argv[2]) == 1)
 {
-if (strstr("+-/*%", argv[2]) == NULL) 
+if (strstr("+-/*%", argv[2]) == NULL)
 {
 printf("Error\n");
 return (0);
