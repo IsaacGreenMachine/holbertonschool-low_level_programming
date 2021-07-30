@@ -30,7 +30,7 @@ va_end(ap);
 void (*getOps(char s))(va_list)
 {
 int i = 0;
-struct ops ops[] = {
+op_t ops[] = {
 {'c', print_c},
 {'i', print_i},
 {'f', print_f},
