@@ -87,8 +87,5 @@ if (s == NULL)
 {
 printf("(nil)");
 }
-else
-{
 printf("%s", s);
-}
 }
