@@ -1,5 +1,11 @@
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ * print_strings - prints passed strings
+ * @separator: printed between strings
+ * @n: number of strings
+ * Return: void
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int count;
