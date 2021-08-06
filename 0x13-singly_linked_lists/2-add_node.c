@@ -22,8 +22,6 @@ new = malloc(sizeof(list_t));
 		new->str = strdup(str);
 		new->len = (strlen(str));
 	}
-	if (new->str == NULL)
-	return (NULL);
 new->next = *head;
 *head = new;
 return (new);
