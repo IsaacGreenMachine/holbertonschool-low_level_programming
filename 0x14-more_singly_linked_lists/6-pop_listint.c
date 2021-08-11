@@ -1,4 +1,9 @@
 #include "lists.h"
+/**
+ * pop_listint - implenets "pop" funcitonality for listints
+ * @head: pointer to start of list
+ * Return: popped value
+ */
 int pop_listint(listint_t **head)
 {
 int n;
