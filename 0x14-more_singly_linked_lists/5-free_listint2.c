@@ -13,5 +13,5 @@ hedd = *head;
 for (next = hedd; next != NULL; next = hedd->next, free(hedd), hedd = next)
 {
 }
-head = NULL;
+*head = NULL;
 }
