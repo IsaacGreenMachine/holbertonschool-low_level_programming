@@ -19,7 +19,7 @@ return (NULL);
 if (idx == 0)
 return (add_nodeint(head, n)); /*insert at beginning*/
 
-for (ptr = *head; index > 0 && ptr != NULL; ptr = ptr->next, index--)
+for (ptr = *head; index - 1 > 0 && ptr != NULL; ptr = ptr->next, index--)
 {
 }
 
