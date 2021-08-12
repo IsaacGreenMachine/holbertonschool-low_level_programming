@@ -16,13 +16,13 @@ if (*b != '0' && *b != '1')
 return (0);
 if (*b == '1')
 {
-i++;
 i <<= 1;
+i++;
 }
 else if (*b == '0')
 i <<= 1;
 else
 break;
 }
-return (i / 2);
+return (i);
 }
