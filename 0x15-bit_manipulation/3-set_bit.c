@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * set_bit - sets a bit at a given point
- * @n:
- * @index:
+ * @n: pointer to number
+ * @index: index to be changed
  * Return: 1 if successful, -1 if failed
  */
 int set_bit(unsigned long int *n, unsigned int index)
@@ -14,6 +14,6 @@ for (; index > 0; index--)
 {
 i <<= 1;
 }
-*n = (*n | i); 
+*n = (*n | i);
 return (1);
 }
