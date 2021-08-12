@@ -16,7 +16,7 @@ if (count != index)
 i++;
 i <<= 1;
 }
-if ((index != 0) && ((i ^ 1) == 1))
+if ((index != 0) && ((*n ^ 0) == 1))
 i++;
 *n = (*n & i);
 return (1);
