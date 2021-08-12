@@ -7,23 +7,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-const char *pos;
-unsigned int num, result;
+unsigned int i;
 if (b == NULL)
 return (0);
-
-for (pos = b; *pos != '\0'; pos++)
+for (i = 0; *b != '\0'; b++, i <<= 1)
 {
-if (*pos != '0' && *pos != '1')
+if (*b != '0' && *b != '1')
 return (0);
+if (*b == '1')
+i++;
 }
-
-pos--;
-
-for (num = 1, result = 0; pos != b; pos--, num *= 2)
-{
-result += (*pos - '0') * num;
-}
-result += (*b - '0') * num;
-return (result);
+return (i / 2);
 }
