@@ -19,10 +19,8 @@ if (*b == '1')
 i <<= 1;
 i++;
 }
-else if (*b == '0')
+else /*if (*b == '0')*/
 i <<= 1;
-else
-break;
 }
 return (i);
 }
