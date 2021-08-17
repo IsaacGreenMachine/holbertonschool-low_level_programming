@@ -17,7 +17,7 @@ if (f1 == -1)/*if file 1 DNE or can't read*/
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
 /*if file 2 exists truncate*/
-f2 = open(argv[2], O_TRUNC | O_WRONLY | O_CREAT, 0644);
+f2 = open(argv[2], O_TRUNC | O_WRONLY | O_CREAT, 0664);
 if (f2 == -1)/*if cannot create or write to f2*/
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
