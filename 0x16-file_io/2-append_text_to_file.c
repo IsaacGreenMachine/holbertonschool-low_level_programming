@@ -15,7 +15,7 @@ return (-1);
 if (text_content == NULL)
 text_content = "";
 
-fd = open(filename, O_APPEND | O_WRONLY, 0644);
+fd = open(filename, O_APPEND | O_WRONLY);
 
 if (fd == -1)
 return (-1);
