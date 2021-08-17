@@ -14,9 +14,6 @@ char *buf;
 if (filename == NULL)
 return (0);
 
-if (letters == 0)
-return (0);
-
 buf = malloc(letters * sizeof(char));
 if (buf == NULL)
 return (0);
