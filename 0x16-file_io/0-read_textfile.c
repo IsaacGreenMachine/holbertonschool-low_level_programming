@@ -26,7 +26,7 @@ j = read(i, buf, letters);
 if (j == -1)
 return (0);
 
-k = write(1, buf, j);
+k = write(STDOUT_FILENO, buf, j);
 if (k == -1)
 return (0);
 free(buf);
