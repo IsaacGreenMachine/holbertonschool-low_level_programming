@@ -6,11 +6,6 @@
 * NULL above head and after last node.
 
 ## Resources
-* [Example](www.google.com "Example")
-* []( "")
-
-## References
-Links to docs/man pages that were useful to you. So that you have a reference when you need to refer to them later.
 * [Introduction](https://www.youtube.com/watch?v=k0pjD12bzP0)
 
 ## Tasks
