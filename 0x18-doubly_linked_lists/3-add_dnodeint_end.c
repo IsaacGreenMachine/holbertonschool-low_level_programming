@@ -9,7 +9,12 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 dlistint_t *a, *b = malloc(sizeof(dlistint_t));
-if (head == NULL || *head == NULL)
+if (head == NULL)
+{
+free(b);
+return (NULL);
+}
+if (*head == NULL)
 {
 *head = b;
 b->prev = NULL;
