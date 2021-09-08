@@ -1,4 +1,3 @@
-```markdown
 # Doubly Linked List
 
 ## Important concepts
@@ -19,5 +18,3 @@ List of tasks with brief descriptions of each task.
 ### 6. Sum list
 ### 7. Insert at index
 ### 8. Delete at index
-
-```
