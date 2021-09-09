@@ -28,6 +28,7 @@ return (-1);
 a = b->prev;
 c = b->next;
 a->next = c;
+if (c != NULL)
 c->prev = a;
 free(b);
 return (1);
