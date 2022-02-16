@@ -20,7 +20,7 @@ return (0);
 index = key_index((const unsigned char *)key, ht->size);
 node->key = strdup(key);
 node->value = strdup(value);
-node->next = NULL;
+node->next = ht->array[index];
 tmp = ht->array[index];
 prev = ht->array[index];
 while (tmp != NULL)
