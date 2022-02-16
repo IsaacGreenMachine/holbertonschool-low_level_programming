@@ -1,0 +1,13 @@
+#include "lists.h"
+/**
+ * free_listint - frees a listint
+ * @head: pointer to head
+ * Return: void
+ */
+void free_listint(listint_t *head)
+{
+listint_t *next;
+for (next = head; next != NULL; next = head->next, free(head), head = next)
+{
+}
+}
