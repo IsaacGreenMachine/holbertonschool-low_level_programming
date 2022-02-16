@@ -11,6 +11,8 @@ unsigned long int index;
 hash_node_t *node;
 index = key_index((const unsigned char *)key, ht->size);
 node = ht->array[index];
+if (ht == NULL || key == NULL)
+return (NULL);
 if (node == NULL)
 {
 return (NULL);
