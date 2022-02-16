@@ -12,7 +12,7 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-hash_node_t *node, *tmp, *prev;
+hash_node_t *node, *tmp, *next;
 unsigned long int index;
 node = malloc(sizeof(hash_node_t));
 if (ht == NULL || key == NULL || value == NULL || node == NULL)
@@ -22,27 +22,21 @@ node->key = strdup(key);
 node->value = strdup(value);
 node->next = ht->array[index];
 tmp = ht->array[index];
-prev = ht->array[index];
+
 while (tmp != NULL)
 {
-tmp = prev->next;
-if (strcmp(prev->key, key) == 0)
+next = tmp->next;
+if (strcmp(tmp->key, key) == 0)
 {
-node->next = prev->next;
-free(prev->value);
-free(prev->key);
-free(prev);
+node->next = tmp->next;
+free(tmp->value);
+free(tmp->key);
+free(tmp);
 break;
 }
-prev = tmp;
+tmp = next;
 
 }
-if (ht->array[index] == NULL)
 ht->array[index] = node;
-else
-{
-node->next = ht->array[index];
-ht->array[index] = node;
-}
 return (1);
 }
