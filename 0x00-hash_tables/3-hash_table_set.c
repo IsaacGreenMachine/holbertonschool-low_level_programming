@@ -25,13 +25,17 @@ tmp = ht->array[index];
 prev = ht->array[index];
 while (tmp != NULL)
 {
-if (strcmp(tmp->key, key) == 0)
+tmp = prev->next;
+if (strcmp(prev->key, key) == 0)
 {
-prev->next = tmp->next;
-free(tmp->value);
-free(tmp->key);
-free(tmp);
+node->next = prev->next;
+free(prev->value);
+free(prev->key);
+free(prev);
+break;
 }
+prev = tmp;
+
 }
 if (ht->array[index] == NULL)
 ht->array[index] = node;
