@@ -1,7 +1,12 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
+
 #include <stdio.h>
 #include <stdlib.h>
+
+
+
+
 /**
  * struct hash_node_s - Node of a hash table
  *
@@ -31,5 +36,8 @@ unsigned long int size;
 hash_node_t **array;
 } hash_table_t;
 
+
 hash_table_t *hash_table_create(unsigned long int size);
+
+
 #endif
