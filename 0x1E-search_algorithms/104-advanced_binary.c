@@ -36,8 +36,10 @@ if (array[m] < value)
 L = m + 1;
 else if (array[m] > value)
 R = m;
+else if (find_lowest(array, m) == m)
+return (m);
 else
-return (find_lowest(array, m));
+return (adv_bin_search(array, L, m, value));
 return (adv_bin_search(array, L, R, value));
 }
 else
