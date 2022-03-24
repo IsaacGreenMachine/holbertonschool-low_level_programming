@@ -35,7 +35,7 @@ m = (L + R) / 2;
 if (array[m] < value)
 L = m + 1;
 else if (array[m] > value)
-R = m - 1;
+R = m;
 else
 return (find_lowest(array, m));
 return (adv_bin_search(array, L, R, value));
