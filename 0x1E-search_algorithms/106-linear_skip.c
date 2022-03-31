@@ -9,10 +9,10 @@
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-
 skiplist_t *point = list;
 int length = list_len(list);
-
+if (list == NULL)
+return (NULL);
 while (point->express != NULL)
 {
 if (point->express->n >= value)
@@ -25,7 +25,6 @@ point->index,
 point->express->index);
 return (inside_search(point, value));
 }
-
 point = point->express;
 printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
 }
@@ -43,18 +42,14 @@ skiplist_t *inside_search(skiplist_t *point, int value)
 {
 while (point != NULL)
 {
-
 if (point != NULL && point->n == value)
 {
 printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
 return (point);
 }
-
 printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
 point = point->next;
-
 }
-
 return (NULL);
 }
 
