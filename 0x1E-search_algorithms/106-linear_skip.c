@@ -45,15 +45,17 @@ skiplist_t *inside_search(skiplist_t *point, int value)
 while (point != NULL)
 {
 
-printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
-point = point->next;
-
 if (point != NULL && point->n == value)
 {
 printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
 return (point);
 }
+
+printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
+point = point->next;
+
 }
+
 return (NULL);
 }
 
