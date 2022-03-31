@@ -15,7 +15,7 @@ int length = list_len(list);
 
 while (point->express != NULL)
 {
-if (point->express->n > value)
+if (point->express->n >= value)
 {
 printf("Value checked at index [%lu] = [%i]\n",
 point->express->index,
@@ -23,10 +23,9 @@ point->express->n);
 printf("Value found between indexes [%lu] and [%lu]\n",
 point->index,
 point->express->index);
-printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
-return (inside_search(point->next, value));
-
+return (inside_search(point, value));
 }
+
 point = point->express;
 printf("Value checked at index [%lu] = [%i]\n", point->index, point->n);
 }
